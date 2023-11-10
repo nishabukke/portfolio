@@ -1,7 +1,32 @@
-$('.nav ul li a').click(function(e) {
-  e.preventDefault();
-  $('.nav ul li a').removeClass('active');
-  $(this).addClass('active');
+window.addEventListener('scroll',(e)=>{
+  const nav = document.querySelector('.nav');
+  if(window.pageYOffset>0){
+    nav.classList.add("add-shadow");
+  }else{
+    nav.classList.remove("add-shadow");
+  }
+});
+
+$(function(){
+  $('.nav ul li').click(function(){
+      $('.nav ul li.active').removeClass('active');
+      $(this).addClass('active');
+  });
+});
+
+
+$(document).ready(function(){ 
+  $(window).scroll(function(){ 
+      if ($(this).scrollTop() > 100) { 
+          $('#scroll').fadeIn(); 
+      } else { 
+          $('#scroll').fadeOut(); 
+      } 
+  }); 
+  $('#scroll').click(function(){ 
+      $("html, body").animate({ scrollTop: 0 }, 600); 
+      return false; 
+  }); 
 });
 
 function activeTab(evt, id) {
@@ -25,4 +50,8 @@ function displaySection(evt, id) {
    document.getElementById("Section" + id).style.display = "block";
    evt.currentTarget.className += " d-chart-show";
 
+}
+
+function flip() {
+  $('.flip-card').toggleClass('flipped');
 }

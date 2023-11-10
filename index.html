@@ -13,6 +13,7 @@
   <title>Nisha Sonone</title>
 </head>
 <body>
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
   <div class="container">
     <div class="header">
         <nav class="nav">
@@ -42,12 +43,12 @@
             <div class="home-data">
               <h1 class="home-title fw-bold">Nisha Sonone</h1>
               <h5 class="designation">Front End Developer</h5>
-              <a href="#" class="say-hello-btn">Say Hello</a>
+              <a href="#contact" class="say-hello-btn">Say Hello <span><img src="images/top-right.png" alt=""></span></a>
             </div>
             <div class="home-img"></div>
           </div>
           <div class="home-scroll">
-            <a href="#footer">
+            <a href="#projects">
               <div class="mouse_scroll">
                 <div class="mouse">
                     <div class="wheel"></div>
@@ -200,90 +201,92 @@
         <p class="text-center">My Personal Journey</p>
       </div>
       <div class="d-flex justify-content-center mb-3"> 
-        <div class="TabButton TabButtonSelected" id="Tab1" onclick="activeTab(event, 'Tab1')">
+        <div class="TabButton TabButtonSelected" id="Tab1" onclick="activeTab(event, 'Tab1'), flip()">
           <i class="fa-solid fa-graduation-cap"></i><span>Education</span></div>
-        <div class="TabButton " id="Tab2" onclick="activeTab(event, 'Tab2')"><i class="fa-solid fa-certificate"></i><span>Certificates</span></div>
+        <div class="TabButton " id="Tab2" onclick="activeTab(event, 'Tab2'), flip()"><i class="fa-solid fa-certificate"></i><span>Certificates</span></div>
         </div>
-        <div id="SectionTab1" class="tab-section d-chart-n d-chart-show" >
-          <div class="qualification-desc">
-            <div class="qualification-data">
-              <div class="qualification-box">
-                <h6 class="fw-bold m-0">BE CSE</h6>
-                <span>SRTM University Nanded</span>
-                <div class="calender mt-3">
-                  <i class="fa-regular fa-calendar-days"></i>
-                  <span class="fst-italic">2015-2019</span>
+        <div class="flip-card">
+          <div id="SectionTab1" class="tab-section d-chart-n d-chart-show front" >
+            <div class="qualification-desc">
+              <div class="qualification-data">
+                <div class="qualification-box">
+                  <h6 class="fw-bold m-0">BE CSE</h6>
+                  <span>SRTM University Nanded</span>
+                  <div class="calender mt-3">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span class="fst-italic">2015-2019</span>
+                  </div>
+                </div>
+                <div>
+                  <span class="round-shape"></span>
+                  <span class="line"></span>
                 </div>
               </div>
-              <div>
-                <span class="round-shape"></span>
-                <span class="line"></span>
-              </div>
-            </div>
-            <div class="qualification-data">
-              <div class="qualification-box">
-                <h6 class="fw-bold m-0">Intermediate of Science</h6>
-                <span>Yeshwant Mahavidyalaya</span>
-                <div class="calender mt-3">
-                  <i class="fa-regular fa-calendar-days"></i>
-                  <span class="fst-italic">2013-2015</span>
+              <div class="qualification-data">
+                <div class="qualification-box">
+                  <h6 class="fw-bold m-0">Intermediate of Science</h6>
+                  <span>Yeshwant Mahavidyalaya</span>
+                  <div class="calender mt-3">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span class="fst-italic">2013-2015</span>
+                  </div>
+                </div>
+                <div>
+                  <span class="round-shape"></span>
+                  <span class="line"></span>
                 </div>
               </div>
-              <div>
-                <span class="round-shape"></span>
-                <span class="line"></span>
-              </div>
-            </div>
-            <div class="qualification-data">
-              <div></div>
-              <div>
-                <span class="round-shape"></span>
-                <span class="line"></span>
-              </div>
-              <div class="qualification-box">
-                <h6 class="fw-bold m-0">Matriculation</h6>
-                <span>Vivek Vardhini High School</span>
-                <div class="calender mt-3">
-                  <i class="fa-regular fa-calendar-days"></i>
-                  <span class="fst-italic">2012-2013</span>
+              <div class="qualification-data">
+                <div></div>
+                <div>
+                  <span class="round-shape"></span>
+                  <span class="line"></span>
+                </div>
+                <div class="qualification-box">
+                  <h6 class="fw-bold m-0">Matriculation</h6>
+                  <span>Vivek Vardhini High School</span>
+                  <div class="calender mt-3">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span class="fst-italic">2012-2013</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="SectionTab2" class="tab-section d-chart-n">
-            <div class="qualification-desc">
-              <div class="qualification-data">
-                  <div class="qualification-box">
-                    <h6 class="fw-bold m-0">Diploma in Web Development</h6>
-                    <span>Sourcekode Institute</span>
-                    <div class="calender mt-3">
-                      <i class="fa-regular fa-calendar-days"></i>
-                      <span class="fst-italic">2019-Present</span>
+          <div id="SectionTab2" class="tab-section d-chart-n back">
+              <div class="qualification-desc">
+                <div class="qualification-data">
+                    <div class="qualification-box">
+                      <h6 class="fw-bold m-0">Diploma in Web Development</h6>
+                      <span>Sourcekode Institute</span>
+                      <div class="calender mt-3">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="fst-italic">2019-Present</span>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <span class="round-shape"></span>
-                    <span class="line"></span>
-                  </div>
-              </div>
-              <div class="qualification-data">
-                  <div></div>
-                  <div>
-                    <span class="round-shape"></span>
-                    <span class="line"></span>
-                  </div>
-                  <div class="qualification-box">
-                    <h6 class="fw-bold m-0">Internship</h6>
-                    <span>Vega Innovations</span>
-                    <div class="calender mt-3">
-                      <i class="fa-regular fa-calendar-days"></i>
-                      <span class="fst-italic">2018-Present</span>
+                    <div>
+                      <span class="round-shape"></span>
+                      <span class="line"></span>
                     </div>
-                  </div>
+                </div>
+                <div class="qualification-data">
+                    <div></div>
+                    <div>
+                      <span class="round-shape"></span>
+                      <span class="line"></span>
+                    </div>
+                    <div class="qualification-box">
+                      <h6 class="fw-bold m-0">Internship</h6>
+                      <span>Vega Innovations</span>
+                      <div class="calender mt-3">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="fst-italic">2018-Present</span>
+                      </div>
+                    </div>
+                </div>
               </div>
-            </div>
-        </div>  
+          </div> 
+        </div> 
     </section>
 
     <section class="projects-section p-5 mt-5" id="projects">
@@ -364,18 +367,22 @@
   </div>
 
   <section class="footer p-5 container-fluid">
-    <h3 class="fw-bolder text-center">Nisha Sonone</h3>
-    <div class="links mt-4">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
+    <div class="footer-inner">
+      <div class="left-footer">
+        <h3 class="fw-bolder">Nisha Sonone</h3>
+      <span>© Copyright. All rigths reserved</span>
+      </div>
+      <div class="right-footer">
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="https://www.linkedin.com/in/nisha-s-94521b276/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/+917350065359" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:sononenisha@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="socials mt-4">
-      <a href="https://www.linkedin.com/in/nisha-s-94521b276/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
-      </a>
-      <a href="https://wa.me/+917350065359" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="mailto:sononenisha@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-    </div>
-    <span class="pt-5">© Copyright. All rigths reserved</span>
   </section>
 
 
